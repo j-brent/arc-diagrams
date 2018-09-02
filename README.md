@@ -12,20 +12,21 @@ Caveat: The algorithms in this repository are not an implementation of the algor
 
 # Requirements
 [matplotlib](https://matplotlib.org/)
+
 [mido](https://mido.readthedocs.io/en/latest/installing.html) (optional: only required if you want to plot arc diagrams created from midi files)
 
 # Getting Started
 
 To generate arc diagrams from your own strings, simply include the files arc_diagram.py and substring.py in your project and call  
-'''python
+```python
 plot_arc_diagram(string)
-'''
+```
 to generate an arc diagram as a matplotlib figure.
 
 You can also generate the examples by calling
-'''python
+```python
 python arc-diagram-midi.py 
-'''
+```
 if you have installed the optional python module [mido](https://mido.readthedocs.io/en/latest/installing.html).
 
 # References
