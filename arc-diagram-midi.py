@@ -4,8 +4,8 @@ from mido import MidiFile
 from arc_diagram import plot_arc_diagram
 
 
-midi_file = 'midis/ravel_bolero_piano.mid'
-plot_title = "Bolero (Ravel)"
+midi_file = '/content/output.mid'
+plot_title = "Amazing GPT2 Piano Output Arc Diagram"
 
 # midi_file = 'midis/fuer_elise.mid'
 # plot_title = "Für Elise (Beethoven)"
