@@ -47,4 +47,4 @@ def plot_arc_diagram_impl( bews, plot_title ):
     title_obj = plt.title(plot_title, loc='left')
     plt.setp(title_obj, color=(0.0, 0.0, 0.0, 0.3)) 
 
-    plt.show()
+    plt.savefig('output.png')
