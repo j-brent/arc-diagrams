@@ -5,7 +5,7 @@ def maximal_matching_pair( s, substring_length, old_index=-1 ):
     find the first pair of matching substrings at least as long as the specified length
     '''
     if substring_length > len(s)/2:
-        return (lensubstring_lengthgth, -1) # fail- futile to keep searching with this string
+        return (len(substring_length), -1) # fail- futile to keep searching with this string
 
     head = s[:substring_length]
     tail = s[substring_length:]
