@@ -10,10 +10,7 @@ plot_title = "Amazing GPT2 Piano Output Arc Diagram"
 # midi_file = 'midis/fuer_elise.mid'
 # plot_title = "Für Elise (Beethoven)"
 
-plot_arc_diagram(stringify_notes(midi_file, 1), plot_title)
-
-
-def stringify_notes( midi_file, track_number ):
+def stringify_notes(midi_file, track_number):
 
     mid = MidiFile(midi_file)
     track_notes = {}
@@ -25,3 +22,5 @@ def stringify_notes( midi_file, track_number ):
             if( msg.type == 'note_off'):
                 track_notes[i] += str(msg.note) +'f'
     return track_notes[track_number] 
+
+plot_arc_diagram(stringify_notes(midi_file, 0), plot_title)
