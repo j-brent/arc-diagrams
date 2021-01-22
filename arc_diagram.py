@@ -29,11 +29,11 @@ def plot_ring( ax, begin, end, width ):
     return outer_radius
 
 def plot_arc_diagram_impl( bews, plot_title ):
-    fig, ax = plt.subplots(subplot_kw={'aspect': 'equal'})
+    fig, ax = plt.subplots(subplot_kw={'aspect': 'auto'})
 
     x_min = 0
-    x_max = 0
-    max_width = 0
+    x_max = 1920
+    max_width = 1080
     for bew in bews:
         x_max = max(x_max, bew[1])
         orad = plot_ring(ax, bew[0], bew[1], bew[2])
@@ -44,7 +44,8 @@ def plot_arc_diagram_impl( bews, plot_title ):
 
     plt.axis('off')
 
-    title_obj = plt.title(plot_title, loc='left')
-    plt.setp(title_obj, color=(0.0, 0.0, 0.0, 0.3)) 
+    title_obj = plt.title(plot_title, loc='center')
+    plt.setp(title_obj, color=(0.0, 0.0, 0.0, 1)) 
 
+    plt.savefig('output.png', dpi=300)
     plt.show()
